@@ -1,0 +1,134 @@
+@import '../../theme/animator.scss';
+
+
+.welcome_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    /* text-align: center; */
+
+    min-height: 200px;
+
+    /* background-color: lightseagreen; */
+}
+
+.welcome_content__title_1, .welcome_content__title_2 {
+    max-width: 88vw;
+    font-family: 'Oswald';
+}
+.welcome_content__title_1 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.welcome_content__title_2 {
+    font-size: 1.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--ion-color-primary);
+}
+.welcome_content__text {
+    font-style: italic;
+}
+
+
+.welcome_image__container {
+    /* background-color: green; */
+    height: 40vh;
+    min-height: 240px;
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+
+    position: relative;
+}
+
+.welcome_image__container__image {
+    height: 60vw;
+    max-height: 300px;
+    width: 60vw;
+    max-width: 300px;
+    border-radius: 50%;
+
+    transition: 200ms;
+    z-index: 1;
+    
+    box-shadow: 0px 2px 6px 6px #e6e6e6;
+}
+
+.welcome_image__container__image:hover {
+    transform: scale(1.1);
+    z-index: 2;
+
+    box-shadow: 0px 4px 12px 2px gray;
+}
+
+.welcome_image__container__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 6.6rem;
+    font-weight: 900;
+    color: lightgrey;
+    text-shadow: 0px 0px 12px grey;
+    z-index: -1;
+
+    /* font-family: 'Oswald'; */
+}
+
+.welcome_image__container__image:hover 
+.welcome_image__container__text:hover {
+    text-shadow: 0px 2px red;
+    font-size: 9rem;
+    color: navy;
+
+}
+
+@media screen and (min-width: 600px) {
+
+    .welcome {
+        padding: 40px;
+    }
+    
+    .welcome_content {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .welcome_image__container {
+        align-self: flex-start;
+        width: 50vw;
+        transform: translate(0);
+    }
+
+    .welcome_image__container__text {
+        font-size: 8.6rem;
+    }
+
+    .welcome_content {
+        /* background-color: maroon; */
+        height: 100%;
+    }
+    
+    .welcome_content__title_1 {
+        font-size: 1.4rem;
+    }
+    .welcome_content__title_2 {
+        font-size: 2.2rem;
+    }
+
+
+}
+
+@media screen and (min-width: 800px) {
+
+    .welcome {
+        padding: 40px 80px;
+    }
+
+}
