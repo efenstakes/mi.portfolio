@@ -19,7 +19,7 @@ const SkillsComponent: React.FC<ComponentProps> = ({ title, skills, isAlt=false 
 
                 {/* title */}
                 <IonCol sizeXs="12" sizeMd="12" sizeLg="12" className="skills_container__title_container">
-                    <IonTitle size="large" className="skills_container__title_container__title">
+                    <IonTitle size="large" className="su_1 skills_container__title_container__title">
                         { title }
                     </IonTitle>
                     <VSpacerComponent space={2} />
@@ -42,15 +42,17 @@ const SkillsComponent: React.FC<ComponentProps> = ({ title, skills, isAlt=false 
 
                         return (
                             <IonChip
-                                key={index}
+                                key={skill}
                                 color={ 
                                     (index%2 === 0) ? 'primary' : 'secondary' 
                                 }
                                 style={{
-                                    padding: '4px 20px'
+                                    padding: '4px 20px',
+                                    backgroundColor: (index%2 === 0) ? '#5BBF3F' : '#30BAD9',
                                     // paddingLeft: '8px',
                                     // paddingRight: '8px',
                                 }}
+                                className={`su_${index*2+3}`}
                             >
                                 {skill}
                             </IonChip>

@@ -26,22 +26,26 @@ const AppBarComponent: React.FC<ComponentProps> = () => {
             <IonText color="primary" 
                 style={{
                     fontWeight: 700,
+                    fontFamily: 'Oswald',
+                    letterSpacing: '1px'
                 }}
+                className="fd_4"
             >
                 FELIX
             </IonText>
 
             <IonButtons slot="primary">
-                <IonButton color="primary"
+                <IonButton color="primary" fill="solid" 
+                    size="default"
+                    strong={true}
+                    className="fd_6"
                     style={{
-                        '--border-radius': '40px',
-                        borderRadius: '40px',
-                        paddingLeft: '8px',
-                        paddingRight: '8px',
-                        backgroundColor: `var(--ion-color-secondary)`,
-                        '--color': 'white',
-                        color: 'white',
-                        fontSize: '.76rem',
+                        '--border-radius': '50px',
+                        // borderRadius: '40px',
+                        marginRight: '16px',
+                        '--padding-start': '18px',
+                        '--padding-end': '18px',
+                        fontSize: '.7rem',
                     }}>
                     Contact Me
                 </IonButton>

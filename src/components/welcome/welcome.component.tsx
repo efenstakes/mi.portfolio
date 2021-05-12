@@ -1,9 +1,11 @@
 import { IonCol, IonGrid, IonRow, IonText, IonTitle } from '@ionic/react';
 
-import img from '../../assets/1.jpg'
 import VSpacerComponent from '../v_spacer/v_spacer.component';
 
-import './welcome.component.css';
+
+import img from '../../assets/1.jpg'
+
+import './welcome.component.scss';
 
 
 interface ComponentProps {}
@@ -17,16 +19,16 @@ const WelcomeComponent: React.FC<ComponentProps> = () => {
                 <IonCol sizeXs="12" sizeMd="6">
                     <div className="welcome_content">
                         
-                        <p className="welcome_content__title_1">
+                        <p className="su_1 welcome_content__title_1">
                             I Transform
                         </p>
-                        <VSpacerComponent space={.5} />
-                        <p className="welcome_content__title_2">
+                        {/* <VSpacerComponent space={.5} /> */}
+                        <p className="su_2 welcome_content__title_2">
                             Ideas into Products.
                         </p>
                         <VSpacerComponent space={1} />
                         <IonText>
-                            <p className="welcome_content__text">
+                            <p className="su_3 welcome_content__text">
                                 and I'm Felix
                             </p>
                         </IonText>
@@ -38,11 +40,11 @@ const WelcomeComponent: React.FC<ComponentProps> = () => {
                 <IonCol sizeXs="12" sizeMd="6">
                     <div className="welcome_image__container">
                         <img
-                            className="welcome_image__container__image" 
+                            className="su_2 welcome_image__container__image" 
                             src={img} 
                         />
                         <IonText>
-                            <h1 className="welcome_image__container__text">
+                            <h1 className="fd_10 welcome_image__container__text">
                                 FELIX
                             </h1>
                         </IonText>
