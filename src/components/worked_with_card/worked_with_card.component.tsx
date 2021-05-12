@@ -20,7 +20,14 @@ const WorkedWithCardComponent: React.FC<ComponentProps> = ({ org, onClick }) => 
                     />
                 </div>
                 <VSpacerComponent space={1} />
-                <IonLabel>{org.name}</IonLabel>
+                <IonLabel 
+                    style={{
+                        fontWeight: '600',
+                        color: 'darkgrey'
+                    }}
+                >
+                    {org.name}
+                </IonLabel>
             </div>
             
         </div>
