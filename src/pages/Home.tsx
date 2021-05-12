@@ -12,8 +12,9 @@ import FooterComponent from '../components/footer/footer.component';
 import SkillsComponent from '../components/skills/skills.component';
 import VSpacerComponent from '../components/v_spacer/v_spacer.component';
 import WelcomeComponent from '../components/welcome/welcome.component';
+import WorkedWithComponent from './worked_with.component';
 
-import './Home.css';
+import './Home.scss';
 
 
 const Home: React.FC = () => {
@@ -53,6 +54,9 @@ const Home: React.FC = () => {
         <VSpacerComponent space={8} />
 
         {/* worked with */}
+        <WorkedWithComponent />
+
+        <VSpacerComponent space={5} />
 
         {/* skills */}
         {/* ux/ui */}
