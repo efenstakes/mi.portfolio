@@ -1,3 +1,4 @@
+import { useHistory } from 'react-router';
 import { 
     IonHeader, IonTitle, IonToolbar, IonButtons, IonButton, IonText 
 } from '@ionic/react';
@@ -7,6 +8,10 @@ import './appbar.component.css';
 
 interface ComponentProps {}
 const AppBarComponent: React.FC<ComponentProps> = () => {
+  const history = useHistory()
+
+  const goToContact =()=> history.push('/contact')
+
   return (
     <IonHeader translucent={false} className="appbar"
         style={{ 
@@ -35,7 +40,11 @@ const AppBarComponent: React.FC<ComponentProps> = () => {
             </IonText>
 
             <IonButtons slot="primary">
-                <IonButton color="primary" fill="solid" 
+
+                <IonButton 
+                    onClick={goToContact}
+                    color="primary" 
+                    fill="solid"
                     size="default"
                     strong={true}
                     className="fd_6"
