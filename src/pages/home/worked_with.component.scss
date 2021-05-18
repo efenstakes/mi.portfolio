@@ -1,0 +1,59 @@
+
+
+.worked_with__title {
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.experience_details {
+    padding: 16px;
+    // background-color: yellow;
+    cursor: pointer;
+
+    @media screen and (min-width: '600px') {
+        padding: 16px 64px;
+        // background-color: red;
+    }
+
+    @media screen and (min-width: '800px') {
+        padding: 16px 100px;
+        // background-color: pink;
+    }
+}
+
+.experience_details__item {
+    --padding-start: 0;
+    --padding-end: 0;
+}
+.avatar {
+    background-color: lightgray;
+    display: grid;
+    place-items: center;
+
+    box-shadow: inset 0px 0px 8px 2px whitesmoke;
+}
+
+
+
+.experience_details__tech {
+    // background-color: yellow;
+    margin-top: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+}
+
+.experience_details__tech__chips {
+    // background-color: yellow;
+    
+    // justify-content: center;
+
+    @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
