@@ -1,0 +1,25 @@
+$primary_color: #428cff;
+$secondary_color: #50c8ff;
+$tertiary_color: #6a64ff;
+
+$success_color: #2fdf75;
+$warning_color: #ffd534;
+
+
+
+.app_button {
+    --border-radius: 50px;
+    margin-right: 16px;
+    --padding-start: 18px;
+    --padding-end: 18px;
+    font-size: .8rem;
+    text-transform: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text_centered {
+    text-align: center;
+}
