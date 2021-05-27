@@ -1,0 +1,9 @@
+@import '../../theme/animator.scss';
+@import '../../theme/commons';
+
+
+.projects__filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
