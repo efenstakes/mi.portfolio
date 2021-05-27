@@ -3,42 +3,20 @@ import {
     IonContent, IonHeader, IonPage, 
     IonTitle, IonToolbar,
     IonGrid, IonRow, IonCol,
-    IonFab, IonFabButton, IonIcon,
-    IonButton,
-    IonItem,
-    IonLabel,
-    IonInput, IonTextarea,
-    IonRadioGroup, IonRadio, IonText
-  } from '@ionic/react';
+} from '@ionic/react';
 
   
 import AppBarComponent from '../../components/appbar/appbar.component';
-import VSpacerComponent from '../../components/v_spacer/v_spacer.component';
 import ContactSuccessComponent from './contact_success.component';
-
-
-import './contact_me.page.scss'
 import ContactFormComponent from './contact_form.component';
 
 
+import './contact_me.page.scss'
 
-const initialState = {
-    name: '',
-    email: '',
-    individual_or_company: 'INDIVIDUAL',
-    description: '',
-}
+
 const ContactMePage = () => {
-    const [formData, setFormData] = useState(initialState)
     const [isSuccessful, setIsSuccessful] = useState(false)
-
-    const setFormValue = ({ target }) => {
-
-    }// setFormValue
-
-    const sendRequest = ()=> {
-        setIsSuccessful(true)
-    }// sendRequest
+   
 
     return (
         <IonPage>
