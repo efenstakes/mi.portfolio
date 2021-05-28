@@ -55,7 +55,16 @@ const ProjectsComponent:React.FC<ComponentProps> = () => {
             description: 'A COVID-19 passport application that allows people to monitor their tests, vaccinations and location.',
             img_styles: {},
             type: 'Open Source',
-            tags: [ 'web', 'ux/ui design', 'open source' ],
+            tags: [ 'mobile', 'ux/ui design', 'open source' ],
+        },
+        {
+            name: 'K11 Server',
+            img: covid,
+            link: 'https://github.com/efenstakes/k11.server',
+            description: 'A COVID-19 passport application server that allows people to monitor their tests, vaccinations and location.',
+            img_styles: {},
+            type: 'Open Source',
+            tags: [ 'web', 'open source' ],
         },
         {
             name: 'LifeBoat',
